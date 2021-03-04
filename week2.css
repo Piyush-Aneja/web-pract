@@ -1,0 +1,158 @@
+*{
+    padding:0px;
+    margin:0px;
+    border:0px;
+    box-sizing: border-box;
+}
+h1{
+    text-align:center;
+}
+body{
+    background-color:white;
+    margin:2px;
+}
+
+.container{
+    /* height:200px; */
+    /* width:30%; */
+    padding:10px;
+    
+    /* border:2px solid black; */
+    /* margin: 2px; */
+    /* float:left; */
+    /* display:flex;
+    flex-direction: row; */
+    /* margin: 1%; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-gap: 15px;
+    position: relative;
+    top: 20px;
+}
+span{
+    padding:10px;
+    width:100px;
+    text-align: center;
+    
+    
+    /* width:3rem; */
+}
+#span1{
+    background-color:yellow;
+
+
+    /* right:0px; */
+    position: relative;
+float: right;
+border: 2px solid black;
+    
+    
+}
+#span2{
+    background-color:red;
+    position: relative;
+    /* right:0px; */
+    /* position:absolute; */
+    float: right;
+    border: 2px solid black;
+ 
+
+
+    
+}
+#span3{
+    background-color:rgb(172, 172, 161);
+    position: relative;
+    /* right:0px; */
+    /* position:absolute; */
+    float: right;
+    /* display: block; */
+    border: 2px solid black;
+
+
+
+    
+}
+#sec1{
+    background-color:rgb(215, 228, 215);
+    /* float: left; */
+    /* position:absolute;
+    left:0%; */
+    position: relative;
+    border: 2px solid black;
+    
+}
+#sec2{
+    background-color:rgb(215, 228, 215);
+    /* clear:left; */
+    /* float:right; */
+    /* position:absolute;
+    left:33%; */
+    /* margin: 2px; */
+    position: relative;
+    border: 2px solid black;
+
+
+}
+#sec3{
+    background-color:rgb(215, 228, 215);
+    /* clear: both; */
+    /* float: right; */
+    /* position:absolute;
+    left:66%; */
+    /* margin: 2px; */
+    position: relative;
+    border: 2px solid black;
+}
+
+p{
+    clear:right
+}
+
+/* tablet */
+@media (min-width:768px) and (max-width:991px){
+    
+
+#sec3{
+    /* width:100%; */
+    /* clear:both;
+
+    flex-wrap: wrap; */
+    grid-column: 1/-1;
+    
+}
+.container{
+   
+grid-template-columns: 1fr 1fr;
+/* grid-template-columns: repeat(auto-fit,minmax(50%,1fr)); */
+    grid-template-rows: 200px 200px;
+    grid-gap: 15px;
+  
+
+    
+}
+    
+}
+
+/* phone */
+@media (max-width:767px){
+    /* #sec1{
+        width:100%;
+    }
+    #sec2{
+        width:100%; 
+        
+    }
+    #sec3{
+        width:100%; 
+        
+    } */
+
+    .container{
+        grid-template-columns: 1fr ;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 15px;
+        }
+   
+}
